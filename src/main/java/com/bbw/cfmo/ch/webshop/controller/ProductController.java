@@ -1,6 +1,7 @@
 package com.bbw.cfmo.ch.webshop.controller;
 
 import com.bbw.cfmo.ch.webshop.model.Product;
+import com.bbw.cfmo.ch.webshop.service.ProductService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

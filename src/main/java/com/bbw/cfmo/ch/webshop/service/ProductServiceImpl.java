@@ -1,9 +1,8 @@
 package com.bbw.cfmo.ch.webshop.service;
 
-
-import com.baeldung.ecommerce.exception.ResourceNotFoundException;
-import com.baeldung.ecommerce.model.Product;
-import com.baeldung.ecommerce.repository.ProductRepository;
+import com.bbw.cfmo.ch.webshop.exception.ResourceNotFoundException;
+import com.bbw.cfmo.ch.webshop.model.Product;
+import com.bbw.cfmo.ch.webshop.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -33,5 +32,4 @@ public class ProductServiceImpl implements ProductService {
     public Product save(Product product) {
         return productRepository.save(product);
     }
-
 }

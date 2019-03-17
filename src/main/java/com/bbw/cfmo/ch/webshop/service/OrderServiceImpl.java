@@ -1,7 +1,7 @@
 package com.bbw.cfmo.ch.webshop.service;
 
-import com.baeldung.ecommerce.model.Order;
-import com.baeldung.ecommerce.repository.OrderRepository;
+import com.bbw.cfmo.ch.webshop.model.Order;
+import com.bbw.cfmo.ch.webshop.repository.OrderRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 @Service
 @Transactional
-public class OrderServiceImpl implements OrderService{
+public class OrderServiceImpl implements OrderService {
 
     private OrderRepository orderRepository;
 
@@ -25,6 +25,7 @@ public class OrderServiceImpl implements OrderService{
     @Override
     public Order create(Order order) {
         order.setDateCreated(LocalDate.now());
+
         return this.orderRepository.save(order);
     }
 
@@ -32,5 +33,4 @@ public class OrderServiceImpl implements OrderService{
     public void update(Order order) {
         this.orderRepository.save(order);
     }
-
 }
