@@ -22,5 +22,4 @@ public class WebshopApplication {
             productService.save(new Product(3L, "Anthem", 60.00, "https://images-na.ssl-images-amazon.com/images/I/91IgHijZghL._SY445_.jpg"));
         };
     }
-
 }
